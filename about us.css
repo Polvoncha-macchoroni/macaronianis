@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+body{
+background-size: cover;
+background-color:  #0B0F18FF;
+background-blend-mode: multiply;
+font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    display: flex;
+ }
+ 
+ .header .menu ul {
+    display: flex;
+ }
+ 
+  
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap; /*перенос строки */
+    justify-content: flex-end; /*прижимает содержимое к краям */
+    align-items:flex-end; /*выравнивает элементы по центру на вертикальной */
+  }
+  
+ .logo{
+width: 100px;
+height: 70px;
+}
+ 
+  img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px; 
+  }
+  
+  .header .menu ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .header .menu ul li {
+    margin: 30px 50px;
+  }
+  
+  .header .menu ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .header .menu ul a:hover{
+    color: #fff;
+    text-shadow:
+   
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 11px #0fa,
+      0 0 20px #0fa,
+      0 0 30px #0fa,
+      0 0 55px #0fa,
+      0 0 80px #0fa;
+  }
+
+.main{
+  width:100%;
+  height: 700px;
+  border: 1px solid transparent
+
+}
+
+.main h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  text-shadow:
+   
+  0 0 1px #fff,
+  0 0 2px #fff,
+  0 0 5px #fff,
+  0 0 11px #0fa,
+  0 0 20px #0fa,
+  0 0 30px #0fa,
+  0 0 55px #0fa,
+  0 0 80px #0fa;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+
+}
+
+.card {
+  width: 24rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: black;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+
+.card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
+
+.card p,
+.card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.card p {
+  inset: auto auto 80px 30px;
+}
+
+.card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+  text-shadow:
+  
+  0 0 1px #fff,
+  0 0 2px #fff,
+  0 0 5px #fff,
+  0 0 11px #69056cca,
+  0 0 20px #69056cca,
+  0 0 30px #69056cca,
+  0 0 55px #69056cca,
+  0 0 80px #69056cca;
+}
+.card:hover p,
+.card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+  color: white;
+  text-shadow:
+    /* белый свет */
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px #69056cca,
+    0 0 20px #69056cca,
+    0 0 30px #69056cca,
+    0 0 55px #69056cca,
+    0 0 80px #69056cca;
+  
+
+}
+
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .logo {
+    width: 75px;
+    height: 100px;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .header .menu ul li {
+    margin: 10px 0;
+  }
+
+  .header .menu ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

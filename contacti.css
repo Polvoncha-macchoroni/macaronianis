@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: #0B0F18FF;
+  font-family: 'Comfortaa', cursive;
+}
+
+
+.header {
+  display: flex;
+}
+
+.header .menu ul {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  /*перенос строки */
+  justify-content: flex-end;
+  /*прижимает содержимое к краям */
+  align-items: flex-end;
+  /*выравнивает элементы по центру на вертикальной */
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px; 
+}
+
+.header .menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.header .menu ul li {
+  margin: 30px 50px;
+}
+
+.header .menu ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header .menu ul a:hover {
+  color: #fff;
+  text-shadow:
+    /* белый свет */
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+}
+
+
+.imag {
+  width: 600px;
+  height: 450px;
+  background-image: url(images/heather-gill-7f2tLlD1A8Q-unsplash.jpg);
+  background-size: contain;
+  position: absolute;
+  right: 250px;
+  top: 150px;
+}
+
+.forma {
+  width: 550px;
+  height: 450px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 330px;
+  top: 180px;
+
+}
+
+.forma {
+  box-shadow: -50px 26px 39px -14px rgba(255, 210, 64, 0.59);
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+
+input {
+  background-color: rgba(245, 222, 179, 0);
+  width: 250px;
+  height: 70px;
+  border: none;
+  border-bottom: 1px solid orange;
+  margin-bottom: 30px;
+  color: wheat;
+}
+
+textarea {
+  background-color: rgba(245, 222, 179, 0);
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-bottom: 1px solid black;
+  color: wheat;
+}
+
+input::placeholder {
+  vertical-align: bottom;
+  color: wheat;
+}
+
+textarea::placeholder {
+  color: wheat;
+}
+
+p {
+  color: wheat;
+  margin-top: 40px;
+}
+
+.knopka {
+  width: 250px;
+  height: 40px;
+  border-color: orange;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.knopka:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: siyanie 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 30px;
+}
+
+.knopka:active {
+  color: #000
+}
+
+.knopka:active:after {
+  background: transparent;
+}
+
+.knopka:hover:before {
+  opacity: 1;
+}
+
+.knopka:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+@keyframes siyanie {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.polosa {
+  width: 700px;
+  height: 130px;
+  background-color: #0B0F18FF;
+  position: absolute;
+  top: 650px;
+  right: 240px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.a,
+.b,
+.c {
+  border: 1px solid black;
+  width: 33%;
+  height: 150px;
+  background-color: #000;
+}
+
+
+.d {
+  color: orange;
+  padding: 35px;
+
+}
+
+.knopka1 {
+
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #000;
+  color: white;
+  box-shadow: 10px 6px 6px orange;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7300;
+}
+
+
+
+
+.d1 {
+  color: orange;
+  padding: 35px;
+
+}
+
+.knopka1 {
+
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #000;
+  color: white;
+  box-shadow: 10px 6px 6px orange;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7300;
+}
+
+
+.d2 {
+  color: orange;
+  padding: 35px;
+
+}
+
+.knopka1 {
+
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #000;
+  color: white;
+  box-shadow: 10px 6px 6px orange;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7300;
+}
+
+
+
+
+
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .logo {
+    width: 75px;
+    height: 100px;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .header .menu ul li {
+    margin: 10px 0;
+  }
+
+  .header .menu ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+body{
+background-size: cover;
+background-image: url(images/hermes-rivera-zQNyuNLYV6c-unsplash.jpg);
+background-color: rgba(0, 0, 0, 0.48);
+background-blend-mode: multiply;
+font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    display: flex;
+ }
+ 
+ .header .menu ul {
+    display: flex;
+ }
+ 
+  
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap; /*перенос строки */
+    justify-content: flex-end; /*прижимает содержимое к краям */
+    align-items:flex-end; /*выравнивает элементы по центру на вертикальной */
+  }
+  
+ .logo{
+width: 100px;
+height: 70px; }
+ 
+  img{
+    width: 60px;
+    height: 60px; border-radius: 30px; 
+  }
+  
+  .header .menu ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .header .menu ul li {
+    margin: 30px 50px;
+  }
+  
+  .header .menu ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .header .menu ul a:hover{
+    color: #fff;
+    text-shadow:
+      /* белый свет */
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 11px #0fa,
+      0 0 20px #0fa,
+      0 0 30px #0fa,
+      0 0 55px #0fa,
+      0 0 80px #0fa;
+  }
+  
+
+.card{
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+button{
+    width: 250px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.034);
+    border-radius: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    border-color: rgba(127, 255, 212, 0.639);
+    font-family: 'Comfortaa', cursive;
+
+}
+
+
+button:hover{
+    text-shadow:
+    /* белый свет */
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+}
+
+h1{
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+p{
+    color: #fff;
+    margin-bottom: 80px;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .logo {
+    width: 75px;
+    height: 100px;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .header .menu ul li {
+    margin: 10px 0;
+  }
+
+  .header .menu ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+  }
+}
